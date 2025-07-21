@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gachbari Net - Village Internet Service Provider</title>
-    <link rel="icon" href="/images/logo.png">
-    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="/img/logo.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
@@ -15,15 +15,15 @@
         <div class="container">
             <nav class="navbar">
                 <div class="logo">
-                    <img src="images/logo.png" alt="Gachbari Net">
-                    <span>Gachbari Net</span>
+                    <img src="img/logo.png" alt="Gachbari Net">
+                    <span><a href="/index.html">Gachbari Net</a></span>
                 </div>
                 <ul class="nav-links">
                     <li><a href="#home">Home</a></li>
-                    <li><a href="about.html">About</a></li>
+                    <li><a href="#about">About</a></li>
                     <li><a href="#plans">Plans</a></li>
                     <li><a href="#coverage">Coverage</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
                 <div class="hamburger">
                     <div class="line"></div>
@@ -68,7 +68,7 @@
                     <p>Our locally-managed network ensures fast speeds with personalized customer service tailored to our community's needs.</p>
                     <div class="stats">
                         <div class="stat-item">
-                            <div class="stat-number" data-count="6087">0</div>
+                            <div class="stat-number" data-count="500">0</div>
                             <div class="stat-label">Happy Customers</div>
                         </div>
                         <div class="stat-item">
@@ -76,13 +76,13 @@
                             <div class="stat-label">% Uptime</div>
                         </div>
                         <div class="stat-item">
-                            <div class="stat-number" data-count="13">0</div>
+                            <div class="stat-number" data-count="10">0</div>
                             <div class="stat-label">Villages Served</div>
                         </div>
                     </div>
                 </div>
                 <div class="about-image">
-                    <img src="images/team.jpg" alt="Gachbari Net team">
+                    <img src="img/team.jpg" alt="Gachbari Net team">
                 </div>
             </div>
         </div>
@@ -99,7 +99,7 @@
                 <div class="plan-card">
                     <div class="plan-header">
                         <h3>Basic</h3>
-                        <div class="plan-price">₹299<span>/month</span></div>
+                        <div class="plan-price">৳700<span>/month</span></div>
                     </div>
                     <div class="plan-features">
                         <ul>
@@ -119,7 +119,7 @@
                     <div class="popular-badge">Most Popular</div>
                     <div class="plan-header">
                         <h3>Standard</h3>
-                        <div class="plan-price">₹499<span>/month</span></div>
+                        <div class="plan-price">৳850<span>/month</span></div>
                     </div>
                     <div class="plan-features">
                         <ul>
@@ -139,11 +139,11 @@
                 <div class="plan-card">
                     <div class="plan-header">
                         <h3>Premium</h3>
-                        <div class="plan-price">₹799<span>/month</span></div>
+                        <div class="plan-price">৳5000<span>/month</span></div>
                     </div>
                     <div class="plan-features">
                         <ul>
-                            <li><i class="fas fa-check"></i> 50 Mbps Speed</li>
+                            <li><i class="fas fa-check"></i> 300 Mbps Speed</li>
                             <li><i class="fas fa-check"></i> Unlimited Data</li>
                             <li><i class="fas fa-check"></i> 15 Devices</li>
                             <li><i class="fas fa-check"></i> Free Installation</li>
@@ -166,18 +166,20 @@
             
             <div class="coverage-content">
                 <div class="coverage-map">
-                    <img src="images/coverage-map.png" alt="Coverage Map" class="map-image">
-                    <div class="location-pin" style="top: 30%; left: 40%;" data-village="Gachbari"></div>
+                    <img src="https://img.freepik.com/premium-vector/background-abstract-vector-design_173620-429.jpg?semt=ais_hybrid&w=740" alt="Coverage Map" class="map-image">
+                    <div class="location-pin" style="top: 30%; left: 40%;" data-village="Gachbari Bazar"></div>
                     <div class="location-pin" style="top: 45%; left: 60%;" data-village="Narainpur"></div>
                     <div class="location-pin" style="top: 60%; left: 35%;" data-village="Amorpur"></div>
+                    <div class="location-pin" style="top: 70%; left: 70%;" data-village="Fagu"></div>
                 </div>
                 
                 <div class="coverage-list">
                     <h3>Currently Serving These Villages:</h3>
                     <ul class="village-list">
-                        <li><i class="fas fa-wifi"></i> Gachbari</li>
+                        <li><i class="fas fa-wifi"></i> Gachbari Bazar</li>
                         <li><i class="fas fa-wifi"></i> Narainpur</li>
                         <li><i class="fas fa-wifi"></i> Amorpur</li>
+                        <li><i class="fas fa-wifi"></i> Fagu</li>
                     </ul>
                     <div class="expansion-notice">
                         <i class="fas fa-bullhorn"></i>
@@ -196,28 +198,36 @@
             
             <div class="contact-content">
                 <div class="contact-form">
-                    <form id="connectionForm">
+                    <form id="connectionForm" action="https://api.web3forms.com/submit" method="POST">
+                        <input type="hidden" name="access_key" value=" 88e95964-1808-473e-bf1f-262ded6f8d8e ">
                         <div class="form-group">
-                            <input type="text" id="name" placeholder="Your Name" required>
+                            <input type="text" id="name" placeholder="Your Name*" required>
                         </div>
                         <div class="form-group">
-                            <input type="tel" id="phone" placeholder="Phone Number" required>
+                            <input type="tel" id="phone" placeholder="Phone Number*" required>
                         </div>
                         <div class="form-group">
-                            <input type="email" id="email" placeholder="Your E-mail" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="text" id="village" placeholder="Your Village" required>
+                            <input type="text" id="village" placeholder="Your Village*" required>
                         </div>
                         <div class="form-group">
                             <select id="interest" required>
-                                <option value="" disabled selected>I'm interested in...</option>
+                                <option value="" disabled selected>I'm interested in...*</option>
                                 <option value="new-connection">New Connection</option>
                                 <option value="support">Technical Support</option>
                                 <option value="complaint">Complaint</option>
                                 <option value="other">Other</option>
                             </select>
                         </div>
+
+                        <div class="form-group">
+                            <select id="interest">
+                                <option value="" disabled selected>Select Your package</option>
+                                <option value="new-connection">Basic - 700 TAKA</option>
+                                <option value="support">Standard - 850 TAKA</option>
+                                <option value="complaint">Premium - 5000 TAKA</option>
+                            </select>
+                        </div>
+
                         <div class="form-group">
                             <textarea id="message" placeholder="Your Message"></textarea>
                         </div>
@@ -232,8 +242,8 @@
                         </div>
                         <div class="info-content">
                             <h3>Call Us</h3>
-                            <p>01735-595535</p>
                             <p>09613-825535</p>
+                            <p>01322-195254</p>
                         </div>
                     </div>
                     
@@ -254,7 +264,7 @@
                         <div class="info-content">
                             <h3>Visit Us</h3>
                             <p>Gachbari Net Headquarters</p>
-                            <p>Main Road, Gachbari</p>
+                            <p>Gachbari Bazar</p>
                         </div>
                     </div>
                 </div>
@@ -268,13 +278,12 @@
             <div class="footer-content">
                 <div class="footer-about">
                     <div class="logo">
-                        <img src="images/logo.png" alt="Gachbari Net">
                         <span>Gachbari Net</span>
                     </div>
                     <p>Bringing high-speed internet to rural communities since 2023. Committed to connecting the unconnected.</p>
                     <div class="social-links">
-                        <a href="https://www.facebook.com/gachbarinet" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                        <a href="https://wa.me/8801735595535" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
                         <a href="#"><i class="fab fa-instagram"></i></a>
                         <a href="#"><i class="fab fa-youtube"></i></a>
                     </div>
@@ -295,29 +304,21 @@
                     <h3>Support</h3>
                     <ul>
                         <li><a href="#">FAQ</a></li>
-                        <li><a href="https://fast.com/" target="_blank">Speed Test</a></li>
+                        <li><a href="https://fast.com/">Speed Test</a></li>
                         <li><a href="#">Pay Bill Online</a></li>
                         <li><a href="#">Network Status</a></li>
                         <li><a href="#">Terms of Service</a></li>
                     </ul>
                 </div>
-                
-                <div class="footer-newsletter">
-                    <h3>Newsletter</h3>
-                    <p>Subscribe for updates on new coverage areas and offers.</p>
-                    <form id="newsletterForm">
-                        <input type="email" placeholder="Your Email" required>
-                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
-                    </form>
-                </div>
             </div>
             
             <div class="footer-bottom">
-                <p>&copy; 2030 Gachbari Net. All Rights Reserved.</p>
+                <p>&copy; 2025 Gachbari Net. All Rights Reserved.</p>
+                <p>Developed with ❤️ for rural communities</p>
             </div>
         </div>
     </footer>
 
-    <script src="js/home.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>

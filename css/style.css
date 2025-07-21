@@ -128,7 +128,6 @@ section {
 }
 
 .header.scrolled {
-    /* padding: 10px 0; */
     background-color: rgba(255, 255, 255, 0.95);
 }
 
@@ -142,10 +141,22 @@ section {
 .logo {
     display: flex;
     align-items: center;
+}
+.logo a {
     font-size: 1.5rem;
     font-weight: 700;
     color: var(--primary-color);
     text-decoration: none;
+    transition: all .6s ease;
+    -webkit-transition: all .6s ease;
+    -moz-transition: all .6s ease;
+    -ms-transition: all .6s ease;
+    -o-transition: all .6s ease;
+}
+
+.logo a:hover{
+    text-shadow: 5px 3px 10px rgb(92, 92, 92);
+    color: #3a44ff;
 }
 
 .logo img {
@@ -456,8 +467,8 @@ section {
 
 .popular-badge {
     position: absolute;
-    top: -5px;
-    right: 30px;
+    top: -10px;
+    right: 20px;
     background-color: var(--primary-color);
     color: var(--white);
     padding: 5px 15px;

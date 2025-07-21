@@ -65,15 +65,15 @@ document.addEventListener('DOMContentLoaded', function() {
     });
     
     // Form Submission
-    const connectionForm = document.getElementById('connectionForm');
-    if (connectionForm) {
-        connectionForm.addEventListener('submit', function(e) {
-            e.preventDefault();
-            // Here you would normally send the form data to a server
-            alert('Thank you for your request! We will contact you shortly.');
-            this.reset();
-        });
-    }
+    // const connectionForm = document.getElementById('connectionForm');
+    // if (connectionForm) {
+    //     connectionForm.addEventListener('submit', function(e) {
+    //         e.preventDefault();
+    //         // Here you would normally send the form data to a server
+    //         alert('Thank you for your request! We will contact you shortly.');
+    //         this.reset();
+    //     });
+    // }
     
     const newsletterForm = document.getElementById('newsletterForm');
     if (newsletterForm) {
