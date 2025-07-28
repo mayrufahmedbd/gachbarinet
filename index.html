@@ -76,7 +76,7 @@
                             <div class="stat-label">% Uptime</div>
                         </div>
                         <div class="stat-item">
-                            <div class="stat-number" data-count="10">0</div>
+                            <div class="stat-number" data-count="70">0</div>
                             <div class="stat-label">Villages Served</div>
                         </div>
                     </div>
@@ -199,15 +199,15 @@
             <div class="contact-content">
                 <div class="contact-form">
                     <form id="connectionForm" action="https://api.web3forms.com/submit" method="POST">
-                        <input type="hidden" name="access_key" value=" 88e95964-1808-473e-bf1f-262ded6f8d8e ">
+                        <input type="hidden" name="access_key" value="88e95964-1808-473e-bf1f-262ded6f8d8e">
                         <div class="form-group">
-                            <input type="text" id="name" placeholder="Your Name*" required>
+                            <input type="text" name="name" placeholder="Your Name*" required>
                         </div>
                         <div class="form-group">
-                            <input type="tel" id="phone" placeholder="Phone Number*" required>
+                            <input type="tel" name="phone" placeholder="Phone Number*" required>
                         </div>
                         <div class="form-group">
-                            <input type="text" id="village" placeholder="Your Village*" required>
+                            <input type="text" name="village" placeholder="Your Village*" required>
                         </div>
                         <div class="form-group">
                             <select id="interest" required>
@@ -220,7 +220,7 @@
                         </div>
 
                         <div class="form-group">
-                            <select id="interest">
+                            <select name="interest">
                                 <option value="" disabled selected>Select Your package</option>
                                 <option value="new-connection">Basic - 700 TAKA</option>
                                 <option value="support">Standard - 850 TAKA</option>
@@ -229,7 +229,7 @@
                         </div>
 
                         <div class="form-group">
-                            <textarea id="message" placeholder="Your Message"></textarea>
+                            <textarea name="message" placeholder="Your Message"></textarea>
                         </div>
                         <button type="submit" class="btn btn-primary">Submit Request</button>
                     </form>
