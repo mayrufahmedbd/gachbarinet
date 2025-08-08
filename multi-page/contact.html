@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Gachbari Net</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header/Navigation -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">
+                    <img src="img/logo.png" alt="Gachbari Net">
+                    <span><a href="index.html">Gachbari Net</a></span>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="plans.html">Plans</a></li>
+                    <li><a href="coverage.html">Coverage</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Contact Section -->
+    <section class="contact">
+        <div class="container">
+            <h2 class="section-title">Get Connected</h2>
+            <p class="section-subtitle">Reach out to us for new connections or support</p>
+            
+            <div class="contact-content">
+                <div class="contact-form">
+                    <form id="connectionForm" action="https://api.web3forms.com/submit" method="POST">
+                        <input type="hidden" name="access_key" value="88e95964-1808-473e-bf1f-262ded6f8d8e">
+                        <div class="form-group">
+                            <input type="text" name="name" placeholder="Enter Your Name*" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" name="phone" placeholder="Enter Phone Number*" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" placeholder="Enter Your Email*" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="village" placeholder="Enter Your Village*" required>
+                        </div>
+                        <div class="form-group">
+                            <select name="interest" required>
+                                <option value="" disabled selected>I'm interested in...*</option>
+                                <option value="new-connection">New Connection</option>
+                                <option value="support">Technical Support</option>
+                                <option value="complaint">Complaint</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <select name="package">
+                                <option value="" disabled selected>Select Your package</option>
+                                <option value="basic">Basic - 700 TAKA</option>
+                                <option value="standard">Standard - 850 TAKA</option>
+                                <option value="premium">Premium - 5000 TAKA</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" placeholder="Your Message"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit Request</button>
+                    </form>
+                </div>
+                
+                <div class="contact-info">
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <div class="info-content">
+                            <h3>Call Us</h3>
+                            <p>09613-825535</p>
+                            <p>01322-195254</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="info-content">
+                            <h3>Email Us</h3>
+                            <p>gachbarinet@gmail.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="info-content">
+                            <h3>Visit Us</h3>
+                            <p>Gachbari Net Headquarters</p>
+                            <p>Gachbari Bazar</p>
+                        </div>
+                    </div>
+
+                    <div class="business-hours">
+                        <h3>Business Hours</h3>
+                        <ul>
+                            <li>Monday-Friday: 9AM - 6PM</li>
+                            <li>Saturday: 9AM - 4PM</li>
+                            <li>Sunday: Closed</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map">
+        <div class="container">
+            <h2 class="section-title">Our Location</h2>
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3650.837240932881!2d90.40665931543187!3d23.7908683932294!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c70b72f1b8b1%3A0xfc87a1bc6699ed26!2sDhaka!5e0!3m2!1sen!2sbd!4v1620000000000!5m2!1sen!2sbd" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <div class="logo">
+                        <span>Gachbari Net</span>
+                    </div>
+                    <p>Bringing high-speed internet to rural communities since 2023. Committed to connecting the unconnected.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="plans.html">Plans</a></li>
+                        <li><a href="coverage.html">Coverage</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h3>Support</h3>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="https://fast.com/">Speed Test</a></li>
+                        <li><a href="#">Pay Bill Online</a></li>
+                        <li><a href="#">Network Status</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Gachbari Net. All Rights Reserved.</p>
+                <p>Developed with ❤️ for rural communities</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
