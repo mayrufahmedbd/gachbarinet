@@ -47,6 +47,7 @@
             </div>
             <div class="hero-image">
                 <div class="signal-animation">
+                    <div class="wifiimg"><img src="/img/wifi.svg" alt="wifi icon"></div>
                     <div class="signal-dot"></div>
                     <div class="signal-wave signal-wave-1"></div>
                     <div class="signal-wave signal-wave-2"></div>
@@ -68,7 +69,7 @@
                     <p>Our locally-managed network ensures fast speeds with personalized customer service tailored to our community's needs.</p>
                     <div class="stats">
                         <div class="stat-item">
-                            <div class="stat-number" data-count="500">0</div>
+                            <div class="stat-number" data-count="10000">100</div>
                             <div class="stat-label">Happy Customers</div>
                         </div>
                         <div class="stat-item">
@@ -201,16 +202,19 @@
                     <form id="connectionForm" action="https://api.web3forms.com/submit" method="POST">
                         <input type="hidden" name="access_key" value="88e95964-1808-473e-bf1f-262ded6f8d8e">
                         <div class="form-group">
-                            <input type="text" name="name" placeholder="Your Name*" required>
+                            <input type="text" name="name" placeholder="Enter Your Name*" required>
                         </div>
                         <div class="form-group">
-                            <input type="tel" name="phone" placeholder="Phone Number*" required>
+                            <input type="phone" name="phone" placeholder="Enter Phone Number*" required>
                         </div>
                         <div class="form-group">
-                            <input type="text" name="village" placeholder="Your Village*" required>
+                            <input type="Gmail" name="Gmail" placeholder="Enter Phone Gmail*" required>
                         </div>
                         <div class="form-group">
-                            <select id="interest" required>
+                            <input type="text" name="village" placeholder="Enter Your Village*" required>
+                        </div>
+                        <div class="form-group">
+                            <select name="interest" required>
                                 <option value="" disabled selected>I'm interested in...*</option>
                                 <option value="new-connection">New Connection</option>
                                 <option value="support">Technical Support</option>
