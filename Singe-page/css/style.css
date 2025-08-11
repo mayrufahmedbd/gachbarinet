@@ -288,8 +288,6 @@ section {
 .wifiimg img {
     width: 100px;
     height: 100px;
-    filter: hue-rotate(90deg);
-    -webkit-filter: hue-rotate(90deg);
 }
 
 .hero-image {

@@ -285,14 +285,13 @@ section {
 
 .wifiimg {
     position: absolute;
-    top: -27px;
-    left: -1px;
+    top: -45px;
+    left: 1px;
 }
 
 .wifiimg img {
     width: 100px;
-    height: 100px;
-    filter: hue-rotate(90deg);
+    height: auto;
 }
 
 .hero-image {
@@ -320,7 +319,7 @@ section {
     transform: translate(-50%, -50%);
     width: 20px;
     height: 20px;
-    background-color: var(--primary-color);
+    /* background-color: var(--primary-color); */
     border-radius: 50%;
     z-index: 2;
 }
@@ -351,7 +350,7 @@ section {
 .signal-wave-3 {
     width: 150px;
     height: 150px;
-    animation-delay: 2s;
+    animation-delay: 3s;
 }
 
 .wave-divider {
