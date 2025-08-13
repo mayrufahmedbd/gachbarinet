@@ -224,6 +224,7 @@ section {
     background: linear-gradient(135deg, #f5f7fa 0%, #e4e8f0 100%);
     position: relative;
     overflow: hidden;
+    height: 100vh;
 }
 
 .hero .container {
@@ -280,14 +281,13 @@ section {
 }
 
 .wifiimg {
-    position: absolute;
-    top: -27px;
-    left: -1px;
+position: absolute;
+    top: -18px;
+    left: 16px;
 }
 
 .wifiimg img {
-    width: 100px;
-    height: 100px;
+    width: 70px;
 }
 
 .hero-image {
@@ -315,7 +315,7 @@ section {
     transform: translate(-50%, -50%);
     width: 20px;
     height: 20px;
-    background-color: var(--primary-color);
+    /* background-color: var(--primary-color); */
     border-radius: 50%;
     z-index: 2;
 }
