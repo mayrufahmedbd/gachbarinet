@@ -92,22 +92,6 @@
             color: #ffffff;
         }
 
-        .header-input a {
-            text-decoration: none;
-            font-size: 18px;
-            padding: 10px 20px;
-            background: #fdbb2d;
-            color: #1a2a6c;
-            border-radius: 30px;
-            font-weight: bold;
-            transition: all 0.3s ease;
-        }
-
-        .header-input a:hover {
-            background: #1a2a6c;
-            color: white;
-        }
-
         .line {
             height: 2px;
             background: linear-gradient(to right, transparent, #1a2a6c, transparent);
@@ -214,32 +198,6 @@
             opacity: 1;
             transform: translateY(0);
         }
-
-        @media (max-width: 768px) {
-            .main-header {
-                flex-direction: column;
-                text-align: center;
-            }
-            .header-img {
-                margin-bottom: 10px;
-            }
-            #header-title{
-                font-size: 18px;
-            }
-            #header-subtitle{
-                font-size: 14px;
-                margin-bottom: 10px;
-
-            }
-            .header-box{
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
-            }
-            .input-group{
-                margin-bottom: 0;
-            }
-        }
     </style>
 </head>
 <body>
@@ -250,20 +208,15 @@
         </div>
 
         <div class="main-header">
-
             <div class="header-box">
-                            <div class="header-img">
-                <img src="/img/logo.png" alt="Internet Service Provider logo">
+                <div class="header-img">
+                    <img src="/img/logo.png" alt="Internet Service Provider logo">
+                </div>
+                <div class="header-text">
+                    <h1 id="header-title">Internet Connection Application</h1>
+                    <h1 id="header-subtitle">Apply for High-Speed Internet</h1>
+                </div>
             </div>
-
-            <div class="header-text">
-                <h1 id="header-title">Internet Connection Application</h1>
-                <h1 id="header-subtitle">Apply for High-Speed Internet</h1>
-            </div>
-            </div>
-
-
-
         </div>
 
         <div class="line"></div>
@@ -283,6 +236,13 @@
                     <label for="phone" id="label-phone">Phone Number</label>
                     <i class="fas fa-phone"></i>
                     <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+                </div>
+
+                <!-- NEW Alternate Phone -->
+                <div class="input-group">
+                    <label for="alt-phone" id="label-alt-phone">Alternate Phone Number (Optional)</label>
+                    <i class="fas fa-phone-volume"></i>
+                    <input type="tel" id="alt-phone" name="alt-phone" placeholder="Enter alternate phone number">
                 </div>
 
                 <div class="input-group">
@@ -336,12 +296,14 @@
                 "form-subtitle": "Fill out the form below and our team will contact you shortly.",
                 "label-name": "Full Name",
                 "label-phone": "Phone Number",
+                "label-alt-phone": "Alternate Phone Number (Optional)",
                 "label-email": "Email (Optional)",
                 "label-address": "Installation Address",
                 "label-package": "Select Internet Package",
                 "label-notes": "Additional Notes (Optional)",
                 "name-placeholder": "Enter your full name",
                 "phone-placeholder": "Enter your phone number",
+                "alt-phone-placeholder": "Enter alternate phone number",
                 "email-placeholder": "Enter your email address",
                 "address-placeholder": "Enter your full address",
                 "package-placeholder": "-- Choose a Package --",
@@ -356,12 +318,14 @@
                 "form-subtitle": "নীচের ফর্মটি পূরণ করুন এবং আমাদের দল শীঘ্রই আপনার সাথে যোগাযোগ করবে।",
                 "label-name": "পূর্ণ নাম",
                 "label-phone": "ফোন নম্বর",
+                "label-alt-phone": "বিকল্প ফোন নম্বর (ঐচ্ছিক)",
                 "label-email": "ইমেইল (ঐচ্ছিক)",
                 "label-address": "ইনস্টলেশন ঠিকানা",
                 "label-package": "ইন্টারনেট প্যাকেজ নির্বাচন করুন",
                 "label-notes": "অতিরিক্ত নোট (ঐচ্ছিক)",
                 "name-placeholder": "আপনার পূর্ণ নাম লিখুন",
                 "phone-placeholder": "আপনার ফোন নম্বর লিখুন",
+                "alt-phone-placeholder": "আপনার বিকল্প ফোন নম্বর লিখুন",
                 "email-placeholder": "আপনার ইমেইল ঠিকানা লিখুন",
                 "address-placeholder": "আপনার পূর্ণ ঠিকানা লিখুন",
                 "package-placeholder": "-- একটি প্যাকেজ নির্বাচন করুন --",
@@ -377,9 +341,6 @@
             });
             document.querySelector(`.lang-btn[onclick="setLanguage('${lang}')"]`).classList.add('active');
 
-            // Always keep LTR
-            document.body.setAttribute('dir', 'ltr');
-
             for (const [id, text] of Object.entries(translations[lang])) {
                 const element = document.getElementById(id);
                 if (element) {
@@ -387,8 +348,10 @@
                 }
             }
 
+            // Placeholders update
             document.getElementById('name').placeholder = translations[lang]['name-placeholder'];
             document.getElementById('phone').placeholder = translations[lang]['phone-placeholder'];
+            document.getElementById('alt-phone').placeholder = translations[lang]['alt-phone-placeholder'];
             document.getElementById('email').placeholder = translations[lang]['email-placeholder'];
             document.getElementById('address').placeholder = translations[lang]['address-placeholder'];
             document.getElementById('package').options[0].text = translations[lang]['package-placeholder'];
