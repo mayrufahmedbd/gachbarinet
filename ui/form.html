@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -62,7 +63,7 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 20px;
+            padding: 10px;
             background: linear-gradient(to right, #1a2a6c, #b21f1f, #fdbb2d);
             color: white;
             border-bottom: 5px solid #fdbb2d;
@@ -76,6 +77,7 @@
             height: 90px;
             border-radius: 50%;
             border: 3px solid white;
+            margin-left: 30px;
         }
 
         .header-text {
@@ -124,7 +126,8 @@
 
         .form-grid {
             display: grid;
-            grid-template-columns: 1fr; /* always one column */
+            grid-template-columns: 1fr;
+            /* always one column */
             gap: 20px;
         }
 
@@ -141,8 +144,8 @@
             font-size: 16px;
         }
 
-        .input-group input, 
-        .input-group textarea, 
+        .input-group input,
+        .input-group textarea,
         .input-group select {
             width: 100%;
             padding: 12px 15px 12px 40px;
@@ -152,8 +155,8 @@
             transition: all 0.3s ease;
         }
 
-        .input-group input:focus, 
-        .input-group textarea:focus, 
+        .input-group input:focus,
+        .input-group textarea:focus,
         .input-group select:focus {
             border-color: #1a2a6c;
             box-shadow: 0 0 0 3px rgba(26, 42, 108, 0.2);
@@ -198,8 +201,29 @@
             opacity: 1;
             transform: translateY(0);
         }
+
+
+        @media (max-width: 576px) {
+            .header-text h1:first-child {
+                font-size: 15px;
+            }
+
+            .header-text h1:last-child {
+                font-size: 12px;
+            }
+
+            .section-title {
+                font-size: 23px;
+            }
+
+            .header-img img {
+                width: 70px;
+                height: 70px;
+            }
+        }
     </style>
 </head>
+
 <body>
     <div class="container">
         <div class="language-switcher">
@@ -223,7 +247,8 @@
 
         <form id="connectionForm" class="form-section">
             <h2 class="section-title" id="form-title">Apply for a New Connection</h2>
-            <p class="section-subtitle" id="form-subtitle">Fill out the form below and our team will contact you shortly.</p>
+            <p class="section-subtitle" id="form-subtitle">Fill out the form below and our team will contact you
+                shortly.</p>
 
             <div class="form-grid">
                 <div class="input-group">
@@ -282,7 +307,7 @@
         </form>
 
         <div id="successMessage" class="success-message">
-            <i class="fas fa-check-circle"></i> 
+            <i class="fas fa-check-circle"></i>
             <span id="success-text">Your request has been submitted! We will contact you soon.</span>
         </div>
     </div>
@@ -360,11 +385,11 @@
             document.getElementById('success-text').textContent = translations[lang]['success-text'];
         }
 
-        document.addEventListener('DOMContentLoaded', function() {
+        document.addEventListener('DOMContentLoaded', function () {
             setLanguage('en');
 
             const form = document.getElementById('connectionForm');
-            form.addEventListener('submit', function(e) {
+            form.addEventListener('submit', function (e) {
                 e.preventDefault();
 
                 const successMessage = document.getElementById('successMessage');
@@ -378,4 +403,5 @@
         });
     </script>
 </body>
+
 </html>

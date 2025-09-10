@@ -43,7 +43,7 @@ section {
 
 .section-title {
     font-size: 2.5rem;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
     text-align: center;
     color: var(--primary-color);
     position: relative;
@@ -205,18 +205,33 @@ section {
     width: 100%;
 }
 
-.hamburger {
+
+.burger {
     display: none;
     cursor: pointer;
 }
 
-.hamburger .line {
+.burger div {
     width: 25px;
     height: 3px;
-    background-color: var(--text-color);
+    background: var(--primary-color);
     margin: 5px;
-    transition: var(--transition);
+    transition: all 0.3s ease;
 }
+
+.toggle .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle .line2 {
+    opacity: 0;
+}
+
+.toggle .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
+
 
 /* Hero Section */
 .hero {
@@ -353,25 +368,6 @@ section {
     animation-delay: 3s;
 }
 
-.wave-divider {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-}
-
-.wave-divider svg {
-    position: relative;
-    display: block;
-    width: calc(100% + 1.3px);
-    height: 100px;
-}
-
-.wave-divider .shape-fill {
-    fill: var(--white);
-}
 
 @keyframes ripple {
     0% {
@@ -631,7 +627,8 @@ section {
 
 .customer-support-list li {
     font-size: 25px;
-    text-shadow: 1px 1px 3px rgba(255, 0, 0, 0.363);
+    text-shadow: 1px 1px 3px rgba(10, 10, 10, 0.212);
+    margin-bottom: 20px;
 }
 
 /* FAQ Section */
@@ -1107,7 +1104,7 @@ section {
 }
 
 @media (max-width: 768px) {
-    .hamburger {
+        .burger {
         display: block;
     }
 
@@ -1137,13 +1134,23 @@ section {
         padding-top: 100px;
     }
 
+    .customer-support-list {
+    width: 100%;
+    
+    }
+
+    .customer-support-list li {
+    font-size: 17px;
+    margin-bottom: 20px;
+    }
+
     .hero .container {
         flex-direction: column;
     }
 
     .hero-content {
         padding-right: 0;
-        margin-bottom: 244px;
+        margin-bottom: 150px;
         text-align: center;
     }
 
