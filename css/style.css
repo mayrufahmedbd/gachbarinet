@@ -238,8 +238,7 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    padding-top: 120px;
+    height: calc(100vh - 91px);
     background: linear-gradient(135deg, #f5f7fa 0%, #e4e8f0 100%);
     position: relative;
     overflow: hidden;
