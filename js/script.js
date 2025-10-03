@@ -56,7 +56,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 
                 if (count < target) {
                     stat.innerText = Math.ceil(count + increment);
-                    setTimeout(animateStats, 20);
+                    setTimeout(animateStats, 1000);
                 } else {
                     stat.innerText = target;
                 }
